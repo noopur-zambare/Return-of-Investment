@@ -1,0 +1,40 @@
+.csv-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .csv-table th,
+  .csv-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px; /* Adjust the font size as desired */
+  }
+  
+  .csv-table th {
+    background-color: #e6f7ff; /* Change the background color of the column headings */
+    color: #000; /* Change the text color of the column headings */
+  }
+  
+  /* Remove the import box background */
+  .Select-control {
+    background-color: transparent;
+    color: #000;
+    text-align: left;
+  }
+  
+  /* Change the background color and text color of the select bar */
+  /* Change the text color of the options in the select bar */
+/* Change the text color of the options in the select bar */
+.Select-menu-outer {
+    background-color: #fff; /* Change the background color of the select bar */
+    color: #000;
+    text-align: left;
+  }
+  
+  .Select-menu-outer, .Select-option {
+    color: #000000 !important; /* Change the text color of the select bar options */
+    text-align: left;
+  }
+  
+  

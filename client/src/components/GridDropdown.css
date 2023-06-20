@@ -1,0 +1,18 @@
+.grid-dropdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-option {
+    padding: 10px;
+    background-color: darkgray;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .grid-option.selected {
+    background-color: #ffb347;
+    color: white;
+  }
+  

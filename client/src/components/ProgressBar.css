@@ -1,0 +1,101 @@
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 500px;
+  background-color: darkgray;
+  border-radius: 40px;
+  padding: 5px;
+  
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 10px; /* Update width to match height */
+  background-color: lightgray;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.step.active {
+  background-color: #ffb347;
+}
+.next-button {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  background-color: #ffb347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.next-button:hover {
+  background-color: #0056b3;
+}
+
+.step-label {
+  font-size: 11px;
+  text-align: center;
+
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.step {
+  position: relative;
+  margin-right: 20px;
+}
+
+.step:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.step {
+  position: relative;
+}
+
+
+
+
+
+

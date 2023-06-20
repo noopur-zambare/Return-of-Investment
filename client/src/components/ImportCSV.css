@@ -1,0 +1,101 @@
+
+.container {
+
+  max-width: 800px;
+  margin: 10 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+.button {
+  font-size: 14px;
+  background: #ffb347;
+  width: 120px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  color: white;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.input-section input[type="file"] {
+  margin-right: 10px;
+  padding: 10px;
+  width: 3000px;
+}
+
+
+.input-section input[type="file"] {
+  margin-right: 10px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.result {
+  margin-top: 10px;
+}
+
+
+.graphs-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.graph-section {
+  flex-basis: 100%;
+}
+
+/* Add more custom styles as needed */
+
+.section {
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section h2 {
+  font-size: 20px;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-section input[type="file"] {
+  margin-right: 10px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result p {
+  font-size: 14px;
+}
+
+
+
+
