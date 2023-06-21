@@ -1,0 +1,23 @@
+Label,req1,req1Product,req2,req2Product
+0,feature request implement add bookmark here option in firefox quantum,AWS,only upper half of button can be clicked in onboarding tour,AWS
+2,cross platform funnel experimentation,AWS,experimentation early desktop onboarding funnel design,AWS
+1,implement preference experiment action a internal action,AWS,add support for local action and implement console log a local action,AWS
+0,add infrastructure to move activity stream into it own content process,AWS,decide on what process unprivileged paymentrequest ui should live in,AWS
+0,convert content/browser/usercontext svg to use context paint and avoid filtering to improve performance,Chrome,set nodefaultsrc on initial browser,AWS
+0,rename hasfxaccount to usesfirefoxsync in a targeting,Chrome,add snippet targeting pocket tagging and bug fix to activity stream,AWS
+1,add snippet targeting pocket tagging and bug fix to activity stream,Firefox,add geo locale fx version to asr targeting,Azure
+2,improve accessibility of autofocused email,Firefox,reduce useless about blank document creation,Azure
+1,can overwrite default/shipped search plugins/engines,Firefox,make it possible to rename search engine support search plugin renaming,Azure
+0,extend new tab loading behaviour to load tab when idle,Firefox,ship rust bookmark merger on desktop,Azure
+1,stuff we can remove now that xul extension are no longer supported,Azure,remove deprecated opentopwin function,Azure
+1,opening preference is slow even on fast machine,Azure,create talos test for loading preference,Azure
+0,figure out localization strategy for cfr,Azure,add localized doorhanger frecency targeting and bug fix to activity stream,Azure
+2,update photon download toolbar icon progressbar to fill horizontally,Azure,add new photon themed download icon,Azure
+1,top site search shortcut,Chrome,uplift top search feature to firefox,Chrome
+1,top site search shortcut,AWS,uplift top search feature to firefox,Chrome
+0,top site search shortcut,AWS,uplift top search feature to firefox,Firefox
+1,top site search shortcut,AWS,uplift top search feature to firefox,Azure
+0,top site search shortcut,AWS,uplift top search feature to firefox,Azure
+2,top site search shortcut,Chrome,uplift top search feature to firefox,AWS
+2,top site search shortcut,Chrome,uplift top search feature to firefox,Firefox
+1,top site search shortcut,Chrome,uplift top search feature to firefox,Azure
