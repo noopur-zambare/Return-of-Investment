@@ -89,7 +89,7 @@ def preprocess_text(text):
 
 
 
-def delete_image_files(file_paths, delay):
+def delete(file_paths, delay):
     """
     Delete the specified image files after a certain delay.
     """
@@ -203,7 +203,7 @@ def trim_data():
 
     df_train_trimmed = df_train[:trim_rows]
     df_filtered_trimmed = df_train_trimmed[selected_columns]
-    df_filtered_trimmed.to_csv(csv, index=False)
+    # df_filtered_trimmed.to_csv(csv, index=False)
 
     for column in df_filtered_trimmed.columns:
         if df_filtered_trimmed[column].dtype == object or isinstance(df_filtered_trimmed[column].dtype, pd.StringDtype):
@@ -301,7 +301,7 @@ def perform_logistic_regression():
         plt.close()
 
         image_files_to_delete = [cm, lg_f1_score]
-        delete_image_files(image_files_to_delete, delay=7)
+        delete(image_files_to_delete, delay=7)
         
         return jsonify({'success': True, 'report': report, 'accuracy':accuracy,'stop':stop,'graph':'/static/lg.png','cm':'/static/lg_cm.png','f1':f1,'f1score':f1_score_lg,'recallscore':recall_score_lg,'precisionscore':precision_score_lg})
     
@@ -387,7 +387,7 @@ def perform_naive_bayes():
         plt.close()
 
         image_files_to_delete = [cm, nb_f1_score]
-        delete_image_files(image_files_to_delete, delay=7)
+        delete(image_files_to_delete, delay=7)
         
         return jsonify({'success': True, 'report': report, 'accuracy':accuracy,'stop':stop,'graph':'/static/nb.png','cm':'/static/nb_cm.png','f1':f1,'f1score':f1_score_nb,'recallscore':recall_score_nb,'precisionscore':precision_score_nb})
     
@@ -473,7 +473,7 @@ def perform_random_forest():
         plt.close()
 
         image_files_to_delete = [cm, rf_f1_score]
-        delete_image_files(image_files_to_delete, delay=7)
+        delete(image_files_to_delete, delay=7)
         
         return jsonify({'success': True, 'report': report, 'accuracy':accuracy,'stop':stop,'graph':'/static/rf.png','cm':'/static/rf_cm.png','f1':f1,'f1score':f1_score_rf,'recallscore':recall_score_rf,'precisionscore':precision_score_rf})
     
@@ -559,7 +559,7 @@ def perform_support_vector_machine():
         plt.close()
 
         image_files_to_delete = [cm, svc_f1_score]
-        delete_image_files(image_files_to_delete, delay=7)
+        delete(image_files_to_delete, delay=7)
         
         return jsonify({'success': True, 'report': report, 'accuracy':accuracy,'stop':stop,'graph':'/static/svc.png','cm':'/static/svc_cm.png','f1':f1,'f1score':f1_score_svc, 'recallscore':recall_score_svc,'precisionscore':precision_score_svc})
     
@@ -645,7 +645,7 @@ def perform_decision_tree():
         plt.close()
 
         image_files_to_delete = [cm, dt_f1_score]
-        delete_image_files(image_files_to_delete, delay=7)
+        delete(image_files_to_delete, delay=7)
         
         return jsonify({'success': True, 'report': report, 'accuracy':accuracy,'stop':stop,'graph':'/static/dt.png','cm':'/static/dt_cm.png','f1':f1,'f1score':f1_score_dt, 'recallscore':recall_score_dt,'precisionscore':precision_score_dt})
     
@@ -717,7 +717,7 @@ def f1score():
     plt.close()
 
     image_files_to_delete = [f1_score_all, recall_score_all, precision_score_all]
-    delete_image_files(image_files_to_delete, delay=10)
+    delete(image_files_to_delete, delay=7)
    
 
     return jsonify({'success':True, 
