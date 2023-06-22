@@ -1,0 +1,33 @@
+.graph-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .graph {
+    flex-basis: calc(50% - 5px); 
+  }
+  
+  .graph-container:last-child {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .graph-container:last-child .graph {
+    flex-basis: 100%; 
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    margin-bottom: 5px;
+  }
+  

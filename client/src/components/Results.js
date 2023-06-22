@@ -1,18 +1,9 @@
-/* Function - Display graphs for F1 score, Recall & Precision over variable training size
-        Pass In: validation data
-        Pass Out: graphs
-    Endfunction */
 import React, { useEffect, useState } from 'react';
 
 const Results = () => {
   const [graph, setGraph] = useState(false);
-  const [graph1, setGraph_recall] = useState(false);
-  const [graph2, setGraph_precision] = useState(false);
-  const [f1Score_lg, setF1Score_lg] = useState('');
-  const [f1Score_nb, setF1Score_nb] = useState('');
-  const [f1Score_rf, setF1Score_rf] = useState('');
-  const [f1Score_svc, setF1Score_svc] = useState('');
-  const [f1Score_dt, setF1Score_dt] = useState('');
+  const [graph1, setGraphRecall] = useState(false);
+  const [graph2, setGraphPrecision] = useState(false);
 
   useEffect(() => {
     fetchF1Score();
@@ -24,22 +15,29 @@ const Results = () => {
     });
     const data = await response.json();
     setGraph(data.graph);
-    setGraph_recall(data.graph1);
-    setGraph_precision(data.graph2);
-    setF1Score_lg(data.f1_score_lg);
-    setF1Score_nb(data.f1_score_nb);
-    setF1Score_rf(data.f1_score_rf);
-    setF1Score_svc(data.f1_score_svc);
-    setF1Score_dt(data.f1_score_dt);
-
-  }
+    setGraphRecall(data.graph1);
+    setGraphPrecision(data.graph2);
+  };
 
   return (
     <div>
       <h3>Results</h3>
-      <img src={graph}/>
-      <img src={graph1}/>
-      <img src={graph2}/> 
+      <div className="graph-container">
+        <div className="graph">
+          <h5>F1 Score Graph</h5>
+          <img src={graph} alt="F1 Score Graph" />
+        </div>
+        <div className="graph">
+          <h5>Recall Graph</h5>
+          <img src={graph1} alt="Recall Graph" />
+        </div>
+      </div>
+      <div className="graph-container">
+        <div className="graph">
+          <h5>Precision Graph</h5>
+          <img src={graph2} alt="Precision Graph" />
+        </div>
+      </div>
     </div>
   );
 };
