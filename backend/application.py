@@ -81,8 +81,7 @@ def preprocess_text(text):
     # '''Remove extra white spaces'''
     tokens = [token.strip() for token in tokens if token.strip()]
 
-    # 
-    text = text.lower()
+
     return text
   else:
         return str(text)
