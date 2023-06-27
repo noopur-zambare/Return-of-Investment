@@ -31,7 +31,7 @@ const MLdropdown = ({ onModelSelect, trainData, testData }) => {
   
     if (selectedValue === 'logistic_regression') {
       try {
-        const response = await axios.post('/logistic-regression');
+        const response = await axios.post('http://34.201.93.116:8080//logistic-regression');
         console.log(response.data);
         if (response.data.success) {
           setReport(response.data.report);
@@ -47,7 +47,7 @@ const MLdropdown = ({ onModelSelect, trainData, testData }) => {
     }
     else if (selectedValue === 'naive_bayes') {
       try {
-        const response = await axios.post('/naive-bayes');
+        const response = await axios.post('http://34.201.93.116:8080//naive-bayes');
         console.log(response.data);
         if (response.data.success) {
           setReport(response.data.report);
@@ -64,7 +64,7 @@ const MLdropdown = ({ onModelSelect, trainData, testData }) => {
     }
     else if (selectedValue === 'random_forest') {
       try {
-        const response = await axios.post('/random-forest');
+        const response = await axios.post('http://34.201.93.116:8080//random-forest');
         console.log(response.data);
         if (response.data.success) {
           setReport(response.data.report);
@@ -80,7 +80,7 @@ const MLdropdown = ({ onModelSelect, trainData, testData }) => {
     }
     else if (selectedValue === 'support_vector_machine') {
       try {
-        const response = await axios.post('/support-vector-machine');
+        const response = await axios.post('http://34.201.93.116:8080//support-vector-machine');
         console.log(response.data);
         if (response.data.success) {
           setReport(response.data.report);
@@ -96,7 +96,7 @@ const MLdropdown = ({ onModelSelect, trainData, testData }) => {
     }
     else if (selectedValue === 'decision_tree') {
       try {
-        const response = await axios.post('/decision-tree');
+        const response = await axios.post('http://34.201.93.116:8080//decision-tree');
         console.log(response.data);
         if (response.data.success) {
           setReport(response.data.report);
