@@ -42,7 +42,7 @@ function ImportCSV() {
     formData.append('training_size', trainingSize);  
   
     axios
-      .post('/upload/train_data', formData)
+      .post('https://34.201.93.116:8080/upload/train_data', formData)
       .then((response) => {
         console.log(response.data);
         if (response.data.success) {
